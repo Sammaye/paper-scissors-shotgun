@@ -119,7 +119,7 @@ So you want to challenge me at rock, paper, scissors; do ya?? Well choose an opt
         After all this it will pick a random choice from the set.
         """
         
-        weights = self.weights;
+        weights = self.weights
         weights[user_choice] = 5
         weights[4] = self.user_consec_win_count
         
@@ -132,16 +132,16 @@ So you want to challenge me at rock, paper, scissors; do ya?? Well choose an opt
     def computer_wins(self):
         self.computer_win_count += 1
         
-        self.user_consec_win_count = 0;
-        self.computer_consec_win_count += 1;
+        self.user_consec_win_count = 0
+        self.computer_consec_win_count += 1
         
         print('I HAVE BEATEN YOU PUNY HUMAN!!!')
     
     def user_wins(self):
         self.user_win_count += 1
         
-        self.user_consec_win_count += 1;
-        self.computer_consec_win_count = 0;
+        self.user_consec_win_count += 1
+        self.computer_consec_win_count = 0
         
         print('Hmmm, it may seem as though you beat me; let\'s try again shall we?')
 
