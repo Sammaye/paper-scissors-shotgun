@@ -6,7 +6,7 @@ from exceptions import InvalidInputError, InvalidSelectionError
 from helpers import string, num
 
 
-class app():
+class App():
     
     choices = {
         1: 'rock',
@@ -146,7 +146,7 @@ So you want to challenge me at rock, paper, scissors; do ya?? Well choose an opt
         print('Hmmm, it may seem as though you beat me; let\'s try again shall we?')
 
 
-application = app()
+application = App()
 
 while(True):
     try:
